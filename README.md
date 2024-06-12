@@ -1,2 +1,2 @@
 # ProductStore
-Implementation of a product store application using Spring Boot and React.
+Implementation of a product store web application using Spring Boot and React.
