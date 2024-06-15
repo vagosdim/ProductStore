@@ -38,6 +38,11 @@ CREATE TABLE reviews (
     product_id INTEGER NOT NULL REFERENCES products(id)
 );
 
+ GRANT ALL PRIVILEGES ON TABLE users TO root;
+ GRANT ALL PRIVILEGES ON TABLE products TO root;
+ GRANT ALL PRIVILEGES ON TABLE  reviews TO root;
+
+
 -- TEMPORARY only just to add some data
 -- Insert sample data into users table
 INSERT INTO users (username, email) VALUES ('john_doe', 'john_doe@example.com');
