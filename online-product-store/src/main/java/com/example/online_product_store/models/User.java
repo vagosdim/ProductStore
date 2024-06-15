@@ -16,8 +16,7 @@ public class User {
     //Default Constructor required by spring boot
     public User(){}
 
-    public User(Long id, String username, String email) {
-        this.id = id;
+    public User(String username, String email) {
         this.username = username;
         this.email = email;
     }

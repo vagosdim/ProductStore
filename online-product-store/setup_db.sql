@@ -7,11 +7,9 @@ CREATE DATABASE product_store;
 -- Connect to the newly created database
 \c product_store;
 
--- Create a new user with a password
-CREATE USER root WITH PASSWORD 'root';
 
 -- Grant all privileges on the new database to the new user
-GRANT ALL PRIVILEGES ON DATABASE product_store TO root;
+GRANT ALL PRIVILEGES ON DATABASE product_store TO postgres;
 
 -- Create the users table
 CREATE TABLE users (
@@ -38,9 +36,9 @@ CREATE TABLE reviews (
     product_id INTEGER NOT NULL REFERENCES products(id)
 );
 
- GRANT ALL PRIVILEGES ON TABLE users TO root;
- GRANT ALL PRIVILEGES ON TABLE products TO root;
- GRANT ALL PRIVILEGES ON TABLE  reviews TO root;
+ GRANT ALL PRIVILEGES ON TABLE users TO postgres;
+ GRANT ALL PRIVILEGES ON TABLE products TO postgres;
+ GRANT ALL PRIVILEGES ON TABLE  reviews TO postgres;
 
 
 -- TEMPORARY only just to add some data
@@ -49,9 +47,9 @@ INSERT INTO users (username, email) VALUES ('john_doe', 'john_doe@example.com');
 INSERT INTO users (username, email) VALUES ('jane_smith', 'jane_smith@example.com');
 
 -- Insert sample data into products table
-INSERT INTO products (name, description, price) VALUES ('Product 1', 'Description for product 1', 19.99);
-INSERT INTO products (name, description, price) VALUES ('Product 2', 'Description for product 2', 29.99);
-
--- Insert sample data into reviews table
-INSERT INTO reviews (rating, comment, user_id, product_id) VALUES (5, 'Great product!', 1, 1);
-INSERT INTO reviews (rating, comment, user_id, product_id) VALUES (4, 'Very good, but a bit expensive.', 2, 2);
+--INSERT INTO products (name, description, price) VALUES ('Product 1', 'Description for product 1', 19.99);
+--INSERT INTO products (name, description, price) VALUES ('Product 2', 'Description for product 2', 29.99);
+--
+---- Insert sample data into reviews table
+--INSERT INTO reviews (rating, comment, user_id, product_id) VALUES (5, 'Great product!', 1, 1);
+--INSERT INTO reviews (rating, comment, user_id, product_id) VALUES (4, 'Very good, but a bit expensive.', 2, 2);
