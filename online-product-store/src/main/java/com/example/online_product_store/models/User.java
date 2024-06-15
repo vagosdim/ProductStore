@@ -1,11 +1,9 @@
-package models;
+package com.example.online_product_store.models;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 
 @Entity
+@Table(name = "users")
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -13,6 +11,10 @@ public class User {
 
     private String username;
     private String email;
+
+
+    //Default Constructor required by spring boot
+    public User(){}
 
     public User(Long id, String username, String email) {
         this.id = id;
