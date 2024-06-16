@@ -1,7 +1,7 @@
-package com.example.online_product_store.services;
+package com.example.product_store_server.services;
 
-import com.example.online_product_store.repositories.UserRepository;
-import com.example.online_product_store.models.User;
+import com.example.product_store_server.repositories.UserRepository;
+import com.example.product_store_server.models.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

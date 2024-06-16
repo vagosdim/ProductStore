@@ -1,5 +1,5 @@
-package com.example.online_product_store.repositories;
-import com.example.online_product_store.models.User;
+package com.example.product_store_server.repositories;
+import com.example.product_store_server.models.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface UserRepository extends JpaRepository<User,Long> {

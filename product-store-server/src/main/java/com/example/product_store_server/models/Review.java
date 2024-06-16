@@ -1,4 +1,4 @@
-package com.example.online_product_store.models;
+package com.example.product_store_server.models;
 
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;

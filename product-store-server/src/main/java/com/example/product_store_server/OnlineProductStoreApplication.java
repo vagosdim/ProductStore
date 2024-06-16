@@ -1,4 +1,4 @@
-package com.example.online_product_store;
+package com.example.product_store_server;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

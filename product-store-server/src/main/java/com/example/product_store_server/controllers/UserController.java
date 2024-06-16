@@ -1,10 +1,10 @@
-package com.example.online_product_store.controllers;
+package com.example.product_store_server.controllers;
 
-import com.example.online_product_store.models.User;
+import com.example.product_store_server.models.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import com.example.online_product_store.services.UserService;
+import com.example.product_store_server.services.UserService;
 
 import java.util.List;
 import java.util.Optional;
