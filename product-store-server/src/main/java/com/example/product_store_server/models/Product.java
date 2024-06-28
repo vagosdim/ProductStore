@@ -1,17 +1,18 @@
 package com.example.product_store_server.models;
+import jakarta.persistence.*;
 
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.Id;
-
+@Entity
+@Table(name="products")
 public class Product {
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long Id;
 
     private String name;
     private String description;
     private Float price;
 
+    public Product(){}
     public Product(Long id, String name, String description, Float price) {
         Id = id;
         this.name = name;
