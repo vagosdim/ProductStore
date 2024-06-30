@@ -1,7 +1,6 @@
 package com.example.product_store_server.services;
 
 import com.example.product_store_server.models.Product;
-import com.example.product_store_server.models.User;
 import com.example.product_store_server.repositories.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

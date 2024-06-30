@@ -40,13 +40,12 @@ CREATE TABLE reviews (
  GRANT ALL PRIVILEGES ON TABLE products TO postgres;
  GRANT ALL PRIVILEGES ON TABLE  reviews TO postgres;
 
-
 -- TEMPORARY only just to add some data
 -- Insert sample data into users table
 INSERT INTO users (username, email) VALUES ('john_doe', 'john_doe@example.com');
 INSERT INTO users (username, email) VALUES ('jane_smith', 'jane_smith@example.com');
-
--- Insert sample data into products table
+--
+---- Insert sample data into products table
 INSERT INTO products (name, description, price) VALUES ('Product 1', 'Description for product 1', 19.99);
 INSERT INTO products (name, description, price) VALUES ('Product 2', 'Description for product 2', 29.99);
 

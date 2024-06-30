@@ -1,9 +1,9 @@
 package com.example.product_store_server.models;
 
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.Id;
-import jakarta.persistence.ManyToOne;
+import jakarta.persistence.*;
 
+@Entity
+@Table(name="reviews")
 public class Review {
     @Id
     @GeneratedValue
@@ -13,11 +13,14 @@ public class Review {
     private String comment;
 
     @ManyToOne
+    @JoinColumn(name = "user_id")
     private User user;
 
     @ManyToOne
+    @JoinColumn(name = "product_id")
     private Product product;
 
+    public Review(){}
     public Review(Long id, int rating, String comment, User user, Product product) {
         Id = id;
         this.rating = rating;
