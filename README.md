@@ -19,7 +19,10 @@ Implementation of a product store web application using Spring Boot and React.
     cd product-store-server 
     mvn clean package
     mvn spring-boot:run
-
+    
+### Runinng the client for the first time:
+    yarn install
+    
 ### Running the client:
     cd product-storeclient
     yarn start
