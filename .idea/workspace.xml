@@ -5,14 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2137a971-e3df-4c86-b14c-9e8a293c95e5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/product-store-server/src/main/java/com/example/product_store_server/controllers/ReviewController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-store-server/src/main/java/com/example/product_store_server/repositories/ReviewRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-store-server/src/main/java/com/example/product_store_server/services/ReviewService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-store-server/src/test/java/com/example/product_store_server/UserServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-store-server/setup_db.sql" beforeDir="false" afterPath="$PROJECT_DIR$/product-store-server/setup_db.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-store-server/src/main/java/com/example/product_store_server/controllers/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-store-server/src/main/java/com/example/product_store_server/controllers/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-store-server/src/main/java/com/example/product_store_server/models/Review.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-store-server/src/main/java/com/example/product_store_server/models/Review.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-store-server/src/main/java/com/example/product_store_server/services/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-store-server/src/main/java/com/example/product_store_server/services/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-store-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/product-store-server/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,14 +39,109 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JUnit.UserServiceTest.deleteUser.executor": "Run",
+    "JUnit.UserServiceTest.executor": "Run",
+    "JUnit.UserServiceTest.findAllUsers.executor": "Run",
+    "JUnit.UserServiceTest.findById.executor": "Run",
+    "JUnit.UserServiceTest.saveUser.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true"
   }
-}</component>
+}]]></component>
+  <component name="RunManager" selected="JUnit.UserServiceTest.findById">
+    <configuration name="UserServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="product-store-server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.product_store_server.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.product_store_server" />
+      <option name="MAIN_CLASS_NAME" value="com.example.product_store_server.UserServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServiceTest.deleteUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="product-store-server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.product_store_server.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.product_store_server" />
+      <option name="MAIN_CLASS_NAME" value="com.example.product_store_server.UserServiceTest" />
+      <option name="METHOD_NAME" value="deleteUser" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServiceTest.findAllUsers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="product-store-server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.product_store_server.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.product_store_server" />
+      <option name="MAIN_CLASS_NAME" value="com.example.product_store_server.UserServiceTest" />
+      <option name="METHOD_NAME" value="findAllUsers" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServiceTest.findById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="product-store-server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.product_store_server.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.product_store_server" />
+      <option name="MAIN_CLASS_NAME" value="com.example.product_store_server.UserServiceTest" />
+      <option name="METHOD_NAME" value="findById" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServiceTest.saveUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="product-store-server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.product_store_server.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.product_store_server" />
+      <option name="MAIN_CLASS_NAME" value="com.example.product_store_server.UserServiceTest" />
+      <option name="METHOD_NAME" value="saveUser" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.UserServiceTest.findById" />
+        <item itemvalue="JUnit.UserServiceTest.deleteUser" />
+        <item itemvalue="JUnit.UserServiceTest" />
+        <item itemvalue="JUnit.UserServiceTest.saveUser" />
+        <item itemvalue="JUnit.UserServiceTest.findAllUsers" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -69,25 +159,5 @@
       <updated>1719574966175</updated>
     </task>
     <servers />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/product-store-server/src/main/java/com/example/product_store_server/services/UserService.java</url>
-          <line>16</line>
-          <properties class="com.example.product_store_server.services.UserService" method="findAll">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/product-store-server/src/main/java/com/example/product_store_server/controllers/ProductController.java</url>
-          <line>26</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
