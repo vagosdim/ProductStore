@@ -5,9 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2137a971-e3df-4c86-b14c-9e8a293c95e5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/product-store-server/src/test/java/com/example/product_store_server/UserServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-store-server/src/test/java/com/example/product_store_server/ProductServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-store-server/src/test/java/com/example/product_store_server/ReviewServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-store-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/product-store-server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-store-server/src/main/java/com/example/product_store_server/models/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-store-server/src/main/java/com/example/product_store_server/models/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-store-server/src/main/java/com/example/product_store_server/models/Review.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-store-server/src/main/java/com/example/product_store_server/models/Review.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-store-server/src/test/java/com/example/product_store_server/UserServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-store-server/src/test/java/com/example/product_store_server/UserServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +45,8 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "JUnit.ProductServiceTest.executor": "Run",
+    "JUnit.ReviewServiceTest.executor": "Run",
     "JUnit.UserServiceTest.deleteUser.executor": "Run",
     "JUnit.UserServiceTest.executor": "Run",
     "JUnit.UserServiceTest.findAllUsers.executor": "Run",
@@ -48,11 +54,41 @@
     "JUnit.UserServiceTest.saveUser.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.UserServiceTest.findById">
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.example.product_store_server" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.ReviewServiceTest">
+    <configuration name="ProductServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="product-store-server" />
+      <option name="PACKAGE_NAME" value="com.example.product_store_server" />
+      <option name="MAIN_CLASS_NAME" value="com.example.product_store_server.ProductServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReviewServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="product-store-server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.product_store_server.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.product_store_server" />
+      <option name="MAIN_CLASS_NAME" value="com.example.product_store_server.ReviewServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="UserServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="product-store-server" />
       <extension name="coverage">
@@ -84,22 +120,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserServiceTest.findAllUsers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="product-store-server" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.product_store_server.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.product_store_server" />
-      <option name="MAIN_CLASS_NAME" value="com.example.product_store_server.UserServiceTest" />
-      <option name="METHOD_NAME" value="findAllUsers" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="UserServiceTest.findById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="product-store-server" />
       <extension name="coverage">
@@ -116,29 +136,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserServiceTest.saveUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="product-store-server" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.product_store_server.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.product_store_server" />
-      <option name="MAIN_CLASS_NAME" value="com.example.product_store_server.UserServiceTest" />
-      <option name="METHOD_NAME" value="saveUser" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ReviewServiceTest" />
+        <item itemvalue="JUnit.ProductServiceTest" />
         <item itemvalue="JUnit.UserServiceTest.findById" />
         <item itemvalue="JUnit.UserServiceTest.deleteUser" />
         <item itemvalue="JUnit.UserServiceTest" />
-        <item itemvalue="JUnit.UserServiceTest.saveUser" />
-        <item itemvalue="JUnit.UserServiceTest.findAllUsers" />
       </list>
     </recent_temporary>
   </component>

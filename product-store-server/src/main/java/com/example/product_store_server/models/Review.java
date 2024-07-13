@@ -21,8 +21,7 @@ public class Review {
     private Product product;
 
     public Review(){}
-    public Review(Long id, int rating, String comment, User user, Product product) {
-        Id = id;
+    public Review(int rating, String comment, User user, Product product) {
         this.rating = rating;
         this.comment = comment;
         this.user = user;

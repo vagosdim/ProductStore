@@ -3,12 +3,12 @@ package com.example.product_store_server;
 import com.example.product_store_server.models.User;
 import com.example.product_store_server.repositories.UserRepository;
 import com.example.product_store_server.services.UserService;
-import org.assertj.core.api.OptionalAssert;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInstance;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
+
 import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.junit.jupiter.MockitoExtension;
@@ -40,16 +40,15 @@ public class UserServiceTest {
     }
 
     @Test
-    void findAllUsers(){
+    void testFindAllUsers(){
         Mockito.when(userRepository.findAll()).thenReturn(users);
         List<User> usersFound=userService.findAll();
 
-        assertThat(usersFound.size()).isEqualTo(2);
         assertThat(usersFound).isEqualTo(users);
     }
 
     @Test
-    void saveUser(){
+    void testSaveUser(){
         User user= users.getFirst();
 
         Mockito.when(userRepository.save(user)).thenReturn(user);
@@ -60,7 +59,7 @@ public class UserServiceTest {
     }
 
     @Test
-    void deleteUser(){
+    void testDeleteUser(){
         User user= users.getFirst();
         Long id=1L;
         Mockito.doNothing().when(userRepository).deleteById(id);
@@ -71,7 +70,7 @@ public class UserServiceTest {
     }
 
     @Test
-    void findById(){
+    void testFindUserById(){
         User user=users.getFirst();
         Long id=1L;
         Mockito.when(userRepository.findById(id)).thenReturn(Optional.of(user));

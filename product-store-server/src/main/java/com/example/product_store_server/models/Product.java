@@ -13,8 +13,8 @@ public class Product {
     private Float price;
 
     public Product(){}
-    public Product(Long id, String name, String description, Float price) {
-        Id = id;
+    public Product( String name, String description, Float price) {
+
         this.name = name;
         this.description = description;
         this.price = price;
@@ -22,10 +22,6 @@ public class Product {
 
     public Long getId() {
         return Id;
-    }
-
-    public void setId(Long id) {
-        Id = id;
     }
 
     public String getName() {
