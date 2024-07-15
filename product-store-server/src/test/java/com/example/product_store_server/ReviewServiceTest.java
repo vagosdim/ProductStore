@@ -3,6 +3,7 @@ package com.example.product_store_server;
 import com.example.product_store_server.models.Review;
 import com.example.product_store_server.repositories.ReviewRepository;
 import com.example.product_store_server.services.ReviewService;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
@@ -25,6 +26,7 @@ class ReviewServiceTest {
 
     private List<Review> reviewsList;
 
+    @BeforeEach
     void init(){
         Review review1 = new Review(5, "Great product", null, null);
         Review review2 = new Review(1, "bad product", null, null);
@@ -52,7 +54,7 @@ class ReviewServiceTest {
 
         Optional<Review> result = reviewService.findById(1L);
 
-        assertThat(result).isEqualTo(review);
+        assertThat(result).isEqualTo(Optional.of(review));
     }
 
     @Test

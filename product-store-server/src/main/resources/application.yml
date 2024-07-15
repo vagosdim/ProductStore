@@ -1,0 +1,27 @@
+#spring:
+#  security:
+#    oauth2:
+#      client:
+#        registration:
+#          github:
+#            clientId: Ov23li1OUIyofsaZhmzw
+#            clientSecret: 302c7c2ede7fde3c4db3b3fe23a3486f3d3ac23e
+# ...
+
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          github:
+            clientId: Ov23li1OUIyofsaZhmzw
+            clientSecret: 302c7c2ede7fde3c4db3b3fe23a3486f3d3ac23e
+            scope: user:email
+            redirect-uri: "http://localhost:8081/login/oauth2/code/github"
+            authorization-grant-type: authorization_code
+            client-name: GitHub
+        provider:
+          github:
+            authorization-uri: https://github.com/login/oauth/authorize
+            token-uri: https://github.com/login/oauth/access_token
+            user-info-uri: https://api.github.com/user

@@ -5,13 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2137a971-e3df-4c86-b14c-9e8a293c95e5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-store-server/src/test/java/com/example/product_store_server/ProductServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-store-server/src/test/java/com/example/product_store_server/ReviewServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-store-server/src/main/java/com/example/product_store_server/config/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-store-server/src/main/java/com/example/product_store_server/controllers/OAuthController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-store-server/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-store-server/src/main/java/com/example/product_store_server/models/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-store-server/src/main/java/com/example/product_store_server/models/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-store-server/src/main/java/com/example/product_store_server/models/Review.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-store-server/src/main/java/com/example/product_store_server/models/Review.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-store-server/src/test/java/com/example/product_store_server/UserServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-store-server/src/test/java/com/example/product_store_server/UserServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-store-client/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/product-store-client/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-store-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/product-store-server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-store-server/src/main/java/com/example/product_store_server/OnlineProductStoreApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-store-server/src/main/java/com/example/product_store_server/OnlineProductStoreApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-store-server/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/product-store-server/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-store-server/src/test/java/com/example/product_store_server/OnlineProductStoreApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-store-server/src/test/java/com/example/product_store_server/OnlineProductStoreApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-store-server/src/test/java/com/example/product_store_server/ReviewServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-store-server/src/test/java/com/example/product_store_server/ReviewServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,8 +48,10 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.OnlineProductStoreApplication.executor": "Run",
+    "JUnit.OnlineProductStoreApplicationTests.executor": "Run",
     "JUnit.ProductServiceTest.executor": "Run",
-    "JUnit.ReviewServiceTest.executor": "Run",
+    "JUnit.ReviewServiceTest.executor": "Debug",
     "JUnit.UserServiceTest.deleteUser.executor": "Run",
     "JUnit.UserServiceTest.executor": "Run",
     "JUnit.UserServiceTest.findAllUsers.executor": "Run",
@@ -64,7 +69,7 @@
       <recent name="com.example.product_store_server" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ReviewServiceTest">
+  <component name="RunManager">
     <configuration name="ProductServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="product-store-server" />
       <option name="PACKAGE_NAME" value="com.example.product_store_server" />
@@ -138,8 +143,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ReviewServiceTest" />
         <item itemvalue="JUnit.ProductServiceTest" />
+        <item itemvalue="JUnit.ReviewServiceTest" />
         <item itemvalue="JUnit.UserServiceTest.findById" />
         <item itemvalue="JUnit.UserServiceTest.deleteUser" />
         <item itemvalue="JUnit.UserServiceTest" />
@@ -163,5 +168,12 @@
       <updated>1719574966175</updated>
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="org.springframework.security.oauth2.core.user.DefaultOAuth2User" memberName="authorities" />
+      </pinned-members>
+    </pin-to-top-manager>
   </component>
 </project>
