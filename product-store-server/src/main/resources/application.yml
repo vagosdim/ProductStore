@@ -1,14 +1,16 @@
-#spring:
-#  security:
-#    oauth2:
-#      client:
-#        registration:
-#          github:
-#            clientId: Ov23li1OUIyofsaZhmzw
-#            clientSecret: 302c7c2ede7fde3c4db3b3fe23a3486f3d3ac23e
-# ...
-
 spring:
+  application:
+    name: product-store-server
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/product_store
+    username: postgres
+    password: root
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+
   security:
     oauth2:
       client:
@@ -25,3 +27,7 @@ spring:
             authorization-uri: https://github.com/login/oauth/authorize
             token-uri: https://github.com/login/oauth/access_token
             user-info-uri: https://api.github.com/user
+            user-name-attribute: login
+
+server:
+  port: 8081
