@@ -55,7 +55,7 @@ public class ReviewController {
 
 
     @DeleteMapping("/{id}")
-    public ResponseEntity<Void> deleteProduct(@PathVariable Long id) {
+    public ResponseEntity<Void> deleteReview(@PathVariable Long id) {
         Optional<Review> review = this.reviewService.findById(id);
         if (review.isPresent()) {
             this.reviewService.deleteById(id);

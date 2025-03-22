@@ -34,7 +34,7 @@ public class UserController {
     }
 
     @PutMapping("/{id}")
-    public ResponseEntity<User> updateProduct(@PathVariable Long id, @RequestBody User userDetails) {
+    public ResponseEntity<User> updateUser(@PathVariable Long id, @RequestBody User userDetails) {
         Optional<User> user = userService.findById(id);
         if (user.isPresent()) {
             User updatedUser = user.get();
